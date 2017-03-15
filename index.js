@@ -5,12 +5,12 @@ export function flipArray(array) {
 
 export function getLargest(array) {
     // Write a function that returns the largest element
-    // in an array
+    // in an array. Assume smallest possible number is 0
 }
 
 export function getSmallest(array) {
     // Write a function that returns the smallest element
-    // in an array
+    // in an array. Assume largest possible number is 1000000
 }
 
 export function findIndex(array, value) {
@@ -31,7 +31,8 @@ export function callOnArray(array, callback) {
 
 export function sumOfObjectValues(obj) {
     // Write a function that returns all the values of an object
-    // added together. Assume all values are numbers
+    // added together. Assume all values are numbers and all numbers
+    // are greater than or equal to 0.
 }
 
 export function capitalize(string) {

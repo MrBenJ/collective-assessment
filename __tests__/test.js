@@ -31,7 +31,7 @@ describe('findIndex()', () => {
     });
 
     it('Should return -1 if the element does not exist in the array', () => {
-        expect(Mod.findInxed(arr, 'x')).toBe(-1);
+        expect(Mod.findIndex(arr, 'x')).toBe(-1);
     });
 });
 
