@@ -31,7 +31,7 @@ describe('findIndex()', () => {
     });
 
     it('Should return -1 if the element does not exist in the array', () => {
-        expect(Mod.findInxed(arr, 'x')).toBe(-1);
+        expect(Mod.findIndex(arr, 'x')).toBe(-1);
     });
 });
 
@@ -86,12 +86,14 @@ describe('Your own tests here', () => {
 
     describe('capitalize()', () => {
 
-        it('What should be here?', () => {
-
+        it('Should return a capitalized string', () => {
+            const answer = Mod.capitalize('hello world');
+            expect(answer).toBe('Hello world');
         });
 
-        it('How about here?', () => {
-
+        it('Should return null if a non-string item is passed in', () => {
+            const notString = 12345;
+            expect(Mod.capitalize(notString)).toBe(null);
         });
 
     });
