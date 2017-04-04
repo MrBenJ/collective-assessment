@@ -96,3 +96,37 @@ describe('Your own tests here', () => {
 
     });
 });
+
+describe('onlyThese()', () => {
+    it('Should filter through values', () => {
+        const filter = (val) => {
+            return val > 10;
+        };
+
+        const obj = {
+            first: 15,
+            second: 5,
+            third: 8,
+            fourth: 99
+        };
+
+        expect(Mod.onlyThese(obj, filter)).toBe({
+            first: 15,
+            fourth: 99
+        });
+    });
+
+    it('Should filter with strings', () => {
+        const fil = val =>  val.match(/dogs/g);
+        const obj = {
+            one: 'dogs',
+            two: 'cats',
+            thing: 'dogs are cool'
+        };
+
+        expect(Mod.onlyThese(obj, filter)).toBe({
+            one: 'dogs'
+            thing: 'dogs are cool'
+        });
+    });
+});

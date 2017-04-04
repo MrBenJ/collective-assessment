@@ -41,3 +41,9 @@ export function capitalize(string) {
     // If a value that isn't a string is passed in, return null
 
 }
+
+export function onlyThese(obj, filter) {
+    // Write a function that takes an object and a filter function.
+    // Filter the object so that returns only key:value pairs where
+    // the value returns true when passed through the filter function
+}
