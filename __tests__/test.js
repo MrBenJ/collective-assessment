@@ -125,7 +125,7 @@ describe('onlyThese()', () => {
         };
 
         expect(Mod.onlyThese(obj, filter)).toBe({
-            one: 'dogs'
+            one: 'dogs',
             thing: 'dogs are cool'
         });
     });
